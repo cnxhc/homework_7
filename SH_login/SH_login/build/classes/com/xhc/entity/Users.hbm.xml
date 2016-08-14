@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.xhc.entity.Users" table="users">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+		<!-- <property name="user_name"  length="16" column="user_name" type="character"></property> -->
+      	<property name="user_name"  length="16" column="user_name" type="string"></property>
+      	<property name="password" length="32" column="password" type="string"></property>
+      	<property name="real_name" length="32" column="real_name" type="string"></property>
+      	<property name="age"  length="11" column="age" type="int"></property>
+      	<property name="phone_num" length="32" column="phone_num" type="string"></property>
+      	<property name="address" length="64" column="address" type="string"></property>
+      	<property name="isadmin" column="isadmin" type="boolean"></property>
+      	
+   	
+    </class>
+</hibernate-mapping>

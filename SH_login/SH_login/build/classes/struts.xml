@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 支持动态方法的调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<package name="myPackage" namespace="/" extends="struts-default">
+		<action name="users" class="com.xhc.action.UserAction">
+			<result name="success">/jsp/success.jsp</result>
+			<result name="fail">/jsp/fail.jsp</result>
+			<result name="reg_sussess">/jsp/login.jsp</result>
+			<result name="mgr">/jsp/mgr.jsp</result>
+			<result name="mgr_info">mgr_info.jsp</result>
+			<result name="index">index.jsp</result>
+		</action>
+	</package>
+</struts>
